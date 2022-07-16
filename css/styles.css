@@ -853,12 +853,10 @@ footer {
     width: 16px;
     height: 15px;
     fill: transparent;
-    
 }
 
 .checkbox:checked ~ .agree-check {
     fill: var(--main-color);
-    
 }
 
 .button-feedback {
