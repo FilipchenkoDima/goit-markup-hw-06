@@ -528,6 +528,7 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    color: var(--background-main);
 }
 
 .input-footer::placeholder {
@@ -696,7 +697,8 @@ footer {
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opacity 250ms var(--cubic-main);
+    transition: opacity 250ms var(--cubic-main),
+    visibility 250ms var(--cubic-main);
 }
 
 .backdrop.is-hidden {
@@ -706,7 +708,7 @@ footer {
 }
 
 .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.8);
+    transform: translate(-50%, -50%) scale(0.9);
 }
 
 .modal {
@@ -724,6 +726,7 @@ footer {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms var(--cubic-main);
+    padding: 40px;
 }
 
 .modal-close-btn {
@@ -745,9 +748,9 @@ footer {
     cursor: pointer;
 }
 
-.feedback-form-position {
+/* .feedback-form-position {
     padding: 40px;
-}
+} */
 
 .feedback-title {
     font-size: 20px;
